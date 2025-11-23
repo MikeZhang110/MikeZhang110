@@ -94,6 +94,36 @@ TranslationPro is a next-generation CAT (Computer-Assisted Translation) tool bas
 
 ## Getting Started
 
+### 🎯 Quick Start - Portable Green Version (推荐绿色便携版)
+
+**Want a portable version that doesn't require installation?**
+
+TranslationPro offers a true "green software" portable version:
+- ✅ No installation required - just unzip and run
+- ✅ No registry writes - leaves no traces on your system
+- ✅ Fully portable - carry on USB drive
+- ✅ All data stays in the application folder
+
+**Create Portable Version:**
+
+**Option 1 - Full Version (with bundled Java, ~100MB):**
+```cmd
+# Double-click this file:
+create-portable.bat
+```
+Best for sharing or use on any computer.
+
+**Option 2 - Lite Version (requires system Java, ~30MB):**
+```cmd
+# Double-click this file:
+create-portable-simple.bat
+```
+Smaller size, requires Java 17 installed.
+
+**📖 Detailed Guide:** See [绿色便携版说明.md](绿色便携版说明.md) (Chinese)
+
+---
+
 ### Prerequisites
 
 - Java 17 or higher
