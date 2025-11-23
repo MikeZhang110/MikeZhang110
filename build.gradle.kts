@@ -9,10 +9,17 @@ group = "com.translationpro"
 version = "1.0.0-SNAPSHOT"
 
 java {
+    // Support Java 17-25
+    val javaVersion = JavaVersion.current()
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
+
+    // Only use toolchain if Java version is exactly 17
+    // This allows building with newer Java versions
+    if (javaVersion.majorVersion.toInt() == 17) {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(17))
+        }
     }
 }
 
